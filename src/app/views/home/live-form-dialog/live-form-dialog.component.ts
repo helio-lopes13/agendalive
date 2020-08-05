@@ -36,6 +36,7 @@ export class LiveFormDialogComponent implements OnInit {
     console.log(this.liveForm.value);
     this.dialogRef.close();
     this.liveForm.reset();
+    window.location.reload();
   }
   
   cancel(): void {
